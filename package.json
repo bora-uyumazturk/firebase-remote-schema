@@ -1,0 +1,13 @@
+{
+  "name": "firebase-remote-schema",
+  "version": "1.0.0",
+  "description": "GraphQL server for connecting firebase to hasura via remote schema.",
+  "main": "src/index.js",
+  "repository": "https://github.com/bora-uyumazturk/firebase-remote-schema.git",
+  "author": "bora-uyumazturk <bora.uyumazturk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.23.0",
+    "graphql": "^15.5.0"
+  }
+}
