@@ -1,16 +1,14 @@
-const books = [
+const users = [
   {
-    title: "The Awakening",
-    author: "Kate Chopin",
+    email: "example1@sample.com",
   },
   {
-    title: "City of Glass",
-    author: "Paul Auster",
+    email: "example2@sample.com",
   },
 ];
 
 const Query = {
-  books: () => books,
+  users: () => users,
 };
 
 export default Query;
