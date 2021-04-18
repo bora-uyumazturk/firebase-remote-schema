@@ -1,14 +1,7 @@
-const users = [
-  {
-    email: "example1@sample.com",
-  },
-  {
-    email: "example2@sample.com",
-  },
-];
+import { listAllUsers } from "../utils/auth";
 
 const Query = {
-  users: () => users,
+  users: () => listAllUsers(),
 };
 
 export default Query;
