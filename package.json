@@ -6,8 +6,13 @@
   "repository": "https://github.com/bora-uyumazturk/firebase-remote-schema.git",
   "author": "bora-uyumazturk <bora.uyumazturk@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
   "dependencies": {
     "apollo-server": "^2.23.0",
-    "graphql": "^15.5.0"
-  }
+    "graphql": "^15.5.0",
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
 }
