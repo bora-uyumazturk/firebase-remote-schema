@@ -1,6 +1,6 @@
 import { ApolloServer } from "apollo-server";
 
-import typeDefs from "./typeDefs.js";
+import typeDefs from "./typeDefs";
 
 const books = [
   {
