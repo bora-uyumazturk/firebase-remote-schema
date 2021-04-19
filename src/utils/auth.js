@@ -21,11 +21,10 @@ const listAllUsers = async () => {
       const listUsersResult = await admin.auth().listUsers(1000, token);
 
       listUsersResult.users.forEach((userRecord) => {
-        userArray.push({ email: userRecord.email });
+        userArray.push({ uid: userRecord.uid, email: userRecord.email });
       });
 
       token = listUsersResult.pageToken;
-      console.log(token);
       if (!token) {
         break;
       }
@@ -39,7 +38,13 @@ const listAllUsers = async () => {
 
 const getUserByEmail = async (email) => {
   try {
-    return await admin.auth().getUserByEmail(email);
+    console.log(email);
+    const user = await admin.auth().getUserByEmail(email);
+    console.log(user);
+    return {
+      uid: user.uid,
+      email: user.email,
+    };
   } catch (error) {
     return null;
   }
