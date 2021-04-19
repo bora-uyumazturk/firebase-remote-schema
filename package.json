@@ -17,6 +17,7 @@
     "dotenv": "^8.2.0",
     "firebase-admin": "^9.6.0",
     "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.7"
   },
   "type": "module",
