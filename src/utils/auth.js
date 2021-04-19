@@ -48,4 +48,16 @@ const getUserByEmail = async (email) => {
   }
 };
 
-export { listAllUsers, getUserByEmail };
+const getUserById = async (uid) => {
+  try {
+    const user = await admin.auth().getUser(uid);
+    return {
+      uid: user.uid,
+      email: user.email,
+    };
+  } catch (error) {
+    return null;
+  }
+};
+
+export { listAllUsers, getUserByEmail, getUserById };
