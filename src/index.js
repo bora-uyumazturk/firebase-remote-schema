@@ -21,6 +21,7 @@ const server = new ApolloServer({
       throw new AuthenticationError("Invalid authorization!");
     }
   },
+  introspection: true,
 });
 
 const port = process.env.PORT || 4000;
