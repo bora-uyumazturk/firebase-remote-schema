@@ -17,7 +17,8 @@ const typeDefs = gql`
   # case, the "users" query returns an array of zero or more users (defined above).
   type Query {
     users: [User]
-    user(email: String!): User
+    userByEmail(email: String!): User
+    userById(uid: String!): User
   }
 `;
 
