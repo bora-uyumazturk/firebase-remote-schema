@@ -1,14 +1,8 @@
-const users = [
-  {
-    email: "example1@sample.com",
-  },
-  {
-    email: "example2@sample.com",
-  },
-];
+import { listAllUsers, getUserByEmail } from "../utils/auth";
 
 const Query = {
-  users: () => users,
+  users: () => listAllUsers(),
+  user: (parent, args) => getUserByEmail(args.email),
 };
 
 export default Query;

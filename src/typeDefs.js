@@ -8,6 +8,7 @@ const typeDefs = gql`
 
   # This "User" type defines the queryable fields for every registered user.
   type User {
+    uid: String
     email: String
   }
 
@@ -16,6 +17,7 @@ const typeDefs = gql`
   # case, the "users" query returns an array of zero or more users (defined above).
   type Query {
     users: [User]
+    user(email: String!): User
   }
 `;
 
