@@ -38,9 +38,7 @@ const listAllUsers = async () => {
 
 const getUserByEmail = async (email) => {
   try {
-    console.log(email);
     const user = await admin.auth().getUserByEmail(email);
-    console.log(user);
     return {
       uid: user.uid,
       email: user.email,
